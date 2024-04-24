@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <title>Tables</title>
+    <head>
+        <link rel="icon" type="image/x-icon" href="./images/sea.jpg">
+    </head>
+    <style>
+       
+    </style>
+    <body>
+        <form action="" method="post" id="form1" target="_self" autocomplete="on" oninput="sum.value=parseInt(num1.value)+parseInt(num2.value)" novalidate>
+            <fieldset >
+                <legend>Example</legend>
+                <label for="email">Email </label><input type="email" type="email" id="email" placeholder="Your email" size="9" maxlength ="20" required>
+                <br><br><label for="password">password </label><input type="password" id="password" type="password">
+                <br><br><label for="age">Age </label><input type="number" name="age" id="age" required min="18" max="99">
+                <br><br><label for="Date">date </label><input type="date" name="date" id="date">
+                <br><br><label for="price">Price </label><input type="range" name="price" id="price" min="10" max="1000" step="10">
+                <br><br>
+                <label for="comments">Comments </label><textarea name="comments" id="comments" cols="25" rows="4" placeholder="Enter your comments"></textarea>
+                <br><br><label>Gender </label><input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" checked><label for="female">Female</label>
+                <br><p>What vehicles do you have?</p><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Car</label><br>
+                <select name="Education">
+                    <option value="B.tech" selected>B.Tech</option>
+                    <option value="B.E">B.E</option>
+                </select>
+                <br>
+                <br><label for="browsers">Browsers</label>
+                <input list="browsers" >
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <br><br>
+                <label for="phone">Enter a phone number </label>
+                <input type="tel" id="phone" name="phone" placeholder="9876543210" pattern="[6-9]{1}[0-9]{9}" required>
+                <p>number 1</p>
+                <input type="number"  id="num1" name="num1" value="0" size="2">
+                <p>number 2</p>
+                <input type="number" id="num2" name="num2" value="0">
+                <p>Sum Output : 
+                <output name="sum" for="num1 num2"></output></p>
+                <br><br>
+                <label for="resume">Resume</label><input type="file" id="resume" name="resume">
+                <br><br><input type="submit" value="submit" name="login">
+                <br><input type="submit" formaction="www.syncfusion.com" formenctype="multipart/form-data" value="go">
+            </fieldset>
+        </form>
+        <label for="name">Name </label>
+        <input type="text" id="name" name="name" form="form1">
+    </body>
+</html>
