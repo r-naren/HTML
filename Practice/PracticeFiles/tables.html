@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <title>Tables</title>
+    <head>
+        <link rel="icon" type="image/x-icon" href="./images/sea.jpg">
+    </head>
+    <style>
+       	tr:hover {background-color: #49cbcb;}
+
+    </style>
+    <body>
+        <table border = "2" cellpadding="6" style="border-collapse:collapse; " cellspacing ="2" width="30%">
+            <caption>Subjects</caption>
+            <colgroup>
+                <col span="1">
+                <col span="1" style="background-color: #ecf9c2">
+              </colgroup>
+        <thead style="border-color: #ff0000;">
+            <tr><th colspan="2" style="background-color: #ffaaff; border-radius: 10px; border-style:dashed;">Learning</th></tr>
+            
+            <tr><th>Topic</th><th>Count</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>CSS</td><td>4</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td>Total</td><td>4</td></tr>
+        </tfoot>
+        </table>
+        <!--Vertical headers-->
+        <table border="2" style="border-color:#00ff00; border-spacing: 10px;">
+            <tr>
+              <th>Firstname</th>
+              <td>Jill</td>
+              <td>Eve</td>
+            </tr>
+            <tr>
+              <th>Lastname</th>
+              <td>Smith</td>
+              <td>Jackson</td>
+            </tr>
+            <tr>
+              <th>Age</th>
+              <td>94</td>
+              <td>50</td>
+            </tr>
+          </table>
+    </body>
+</html>

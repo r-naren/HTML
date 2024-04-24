@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <title>Images</title>
+    <head>
+        <link rel="icon" type="image/x-icon" href="./images/sea.jpg">
+    </head>
+    <style>
+        body {
+            background-image: url('./images/sea.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            }
+    </style>
+    <body>
+        <img src="./images/sea.jpg" alt="Sea" style="width:150px;height:150px;" usemap="#seamap">
+        <map name="seamap">
+            <area shape="rect" coords="30,40,250,100" alt="tree" href="common.html">
+        </map>
+        <picture>
+            <source media="(min-width: 750px)" srcset="./images/waterfall.jpg">
+            <source media="(min-width: 650px)" srcset="./images/sea.jpg">
+            <img src="./images/tree.jpg">
+          </picture>
+          <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&loop=1">
+          </iframe>
+          <iframe width="560" name="iframe_a" height="315" src="./videos/LinearSearchAlgorithm.mp4" frameborder="0" >Linear search</iframe>
+          
+            <p><a href="./images.html" target="iframe_a">Images.html</a></p>
+    
+    </body>
+</html>
